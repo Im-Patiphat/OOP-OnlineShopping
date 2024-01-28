@@ -187,7 +187,7 @@ const main = () => {
     shoppingCart.addLineItem(lineItem4);
 
     // Set ShoppingCart for the Account
-    const account = new Account("acc01", "Billing Address", false, "01/01/2567", "");
+    const account = new Account("acc01", "Billing Address", false, "01/01/2567", "01/01/2567");
     account.setShoppingCart(shoppingCart);
 
     // Set Account for the Customer
