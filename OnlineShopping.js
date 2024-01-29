@@ -198,35 +198,5 @@ const main = () => {
     user1.setCustomer(customer1);
     user1.setShoppingCart(shoppingCart);
 
-    console.log("ชื่อ : " + customer1.id);
-    console.log("จำนวนคำสั่งซื้อ : " + customer1.account.orders.length);
-
-    for (let i = 0; i < customer1.account.orders.length; i++) {
-        console.log("คำสั่งซื้อที่ : " + (i + 1));
-        let total = 0;
-
-        for (let a = 0; a < customer1.account.orders[i].lineItems.length; a++) {
-            const lineItem = customer1.account.orders[i].lineItems[a];
-            const product = lineItem.product;
-            const quantity = lineItem.quantity;
-            const subTotal = quantity * lineItem.price;
-            total += subTotal;
-
-            console.log(
-                "ลำดับที่ : " +
-                (a + 1) +
-                " " +
-                product.name +
-                " จำนวน " +
-                quantity +
-                " ราคา " +
-                subTotal +
-                " บาท"
-            );
-        }
-        console.log("รวมทั้งหมด " + total + " บาท");
-    }
-
-
 }
 main();
