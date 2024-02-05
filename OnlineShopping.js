@@ -144,7 +144,7 @@ class LineItem {
     }
     getDetail(){
         return(
-            this.product.name +
+            " "+this.product.name +
             " จำนวน " +
             this.quantity +
             " ราคา " +
